@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: #3c3c3c;
+}
+
+a {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Merriweather;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+}

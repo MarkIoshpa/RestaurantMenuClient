@@ -1,0 +1,67 @@
+#header {
+    position: relative;
+    width: 100%;
+    height: 963px;
+    background-image: url('../images/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f5f6f5;
+}
+
+#header .headerMessage{
+    position: absolute;
+    top: 417px;
+    right: 16%;
+    width: 506px;
+    height: 200px;
+    background-color: #f5f6f5;
+}
+
+#header ul {
+    padding-top: 50px;
+    position: absolute;
+    right: 5%;
+    width: 700px;
+    font-family: Merriweather;
+    font-size: 18px;
+    list-style-type: none;
+    height: 51px;
+}
+
+#header li {
+    margin-right: 70px;
+    float: left;
+    padding-top: 10px;
+    width: 102px;
+    height: 41px;
+    text-align: center;
+    background-color: #f5f6f5;
+    cursor: pointer;
+}
+
+#header li:first-child {
+    border: solid;
+    border-width: 1px;
+    border-color: #676768;
+}
+
+#header .decoration {
+    margin-left: 139px;
+    width: 253px;
+    height: 33px;
+    margin-right: 120px;
+    background-image: url('../images/decoration.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#header .seperator {
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 140px;
+    background-color: #f8d82f;
+    background-image: url('../images/seperator.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
