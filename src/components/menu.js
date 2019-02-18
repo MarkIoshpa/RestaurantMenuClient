@@ -136,7 +136,7 @@ class Menu extends Component {
             // get item's new id
             fetch(menuUrl)
             .then(res => res.json())
-            .then(data => data.map(item => {
+            .then(data => data.forEach(item => {
                 if(item.name===this.newDishName.value){
                     // add dish to state
                     this.add(

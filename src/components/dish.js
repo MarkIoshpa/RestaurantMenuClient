@@ -92,7 +92,7 @@ class Dish extends Component {
             // get item's new id
             fetch(menuUrl)
             .then(res => res.json())
-            .then(data => data.map(item => {
+            .then(data => data.forEach(item => {
                 if(item.name===this.newDishName.value){
                     newDish.id = item._id
                     this.props.onUpdate(newDish, this.props.item.id)
