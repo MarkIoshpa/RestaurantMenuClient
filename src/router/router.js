@@ -6,7 +6,7 @@ import MainPage from '../components/main'
 const ReactRouter = () => {
     return (
         <React.Fragment>
-            <Route exact path='/' component={MainPage}/>
+            <Route exact path='/2018-2019/dcs/dev_281/' component={MainPage}/>
         </React.Fragment>
     )
 }
