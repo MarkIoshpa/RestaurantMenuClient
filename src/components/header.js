@@ -7,7 +7,8 @@ class Header extends Component {
     constructor(props) {
         super(props)
         this.state = { 
-            Login: false
+            Login: false,
+            name: null
         }
         this.responseGoogle = this.responseGoogle.bind(this)
         this.logout = this.logout.bind(this)
@@ -15,7 +16,7 @@ class Header extends Component {
 
     // google response
     responseGoogle = (response) => {
-        this.setState({Login: true})
+        this.setState({Login: true, name: response.profileObj.givenName})
         this.props.login(response)
     }
 
@@ -28,6 +29,7 @@ class Header extends Component {
     render() {
         return (
             <div id='header'>
+                {this.state.Login && <h2>Logged in as {this.state.name}</h2>}
                 <ul>
                     <li><a href='#header'>Home</a></li>
                     <li><a href='#specials'>Specials</a></li>
@@ -36,13 +38,13 @@ class Header extends Component {
                         <GoogleLogin
                             clientId="552156037235-obu9stiupvt3cj6o8d5p9a2s7lmru4mj.apps.googleusercontent.com"
                             render={renderProps => (
-                                <a onClick={renderProps.onClick}>Login</a>
+                                <button onClick={renderProps.onClick}>Login</button>
                             )}
                             onSuccess={this.responseGoogle}
                         /> :     
                         <GoogleLogout
                         render={renderProps => (
-                            <a onClick={renderProps.onClick}>Logout</a>
+                            <button onClick={renderProps.onClick}>Logout</button>
                         )}
                         onLogoutSuccess={this.logout}
                         />}

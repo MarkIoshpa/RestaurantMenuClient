@@ -1,0 +1,77 @@
+.dialogAdd{
+    margin-top: 30px;
+    margin-left: 15%;
+}
+
+.dialogAdd h2{
+    margin-left: 220px;
+    font-family: Merriweather;
+    font-size: 34px;
+    margin-bottom: 0;
+}
+
+.dialogAdd label{
+    position: relative;
+    display: block;
+    font-family: Merriweather;
+    font-size: 24px;
+}
+
+.dialogAdd label:nth-child(1), .dialogAdd label:nth-child(2), .dialogAdd label:nth-child(3){
+    width: 300px;
+    height: 50px;
+}
+
+.dialogAdd label:nth-child(4), .dialogAdd label:nth-child(5){
+    width: 600px;
+    height: 120px;
+}
+
+.dialogAdd input, select{
+    position: absolute;
+    right: 0px;
+}
+
+.dialogAdd input{
+    width: 150px;
+    height: 25px;
+}
+
+.dialogAdd select{
+    width: 156px;
+    height: 32px;
+}
+
+.dialogAdd textarea{
+    width: 450px;
+    height: 100px;
+    position: absolute;
+    right: 0px;
+}
+
+.dialogAdd button{
+    margin-top: 50px;
+    float: left;
+    margin-right: 40px;
+    font-family: Merriweather;
+    font-size: 24px;
+    width: 150px;
+    height: 50px;
+    border: solid;
+    border-width: thin;
+    outline:none;
+}
+
+.dialogAdd form button{
+    margin-left: 260px;
+}
+
+.dialogAdd .decoration {
+    width: 253px;
+    height: 33px;
+    background-image: url('../images/decoration.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    margin-left: 200px;
+}

@@ -8,6 +8,13 @@
     background-color: #f5f6f5;
 }
 
+#header h2{
+    position: absolute;
+    right: 20px;
+    font-family: Merriweather;
+    font-size: 16px;
+}
+
 #header .headerMessage{
     position: absolute;
     top: 417px;
@@ -22,21 +29,27 @@
     position: absolute;
     right: 5%;
     width: 700px;
-    font-family: Merriweather;
-    font-size: 18px;
     list-style-type: none;
     height: 51px;
 }
 
-#header li {
+#header li, #header button {
     margin-right: 70px;
     float: left;
-    padding-top: 10px;
+    padding-top: 13px;
     width: 102px;
-    height: 41px;
+    height: 38px;
     text-align: center;
+    font-family: Merriweather;
+    font-size: 18px;
     background-color: #f5f6f5;
     cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#header button {
+    margin-top: -13px;
 }
 
 #header li:first-child {

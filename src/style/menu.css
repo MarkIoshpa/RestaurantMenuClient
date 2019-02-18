@@ -7,26 +7,34 @@
     background-color: #eeefef;
 }
 
-#menu h1 {
-    margin-top: 60px;
+#menu .menuHeader{
+    position: absolute;
+    top: 60px;
+    right: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#menu .menuHeader h1{
+    text-indent: 75px;
 }
 
 #menu .decoration {
-    position: absolute;
-    top: 140px;
-    width: 20%;
-    right: 36.5%;
+    width: 253px;
     height: 33px;
     background-image: url('../images/decoration.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#menu ul{
+#menu .menuNav{
     position: absolute;
     top: 200px;
-    width: 36%;
-    right: 31%;
+    right: 33%;
+}
+
+#menu ul{
+    width: 100%;
     list-style: none;
 }
 
@@ -93,14 +101,16 @@
     top: 300px;
     left: 100px;
     font-size: 24px;
-    width: 140px;
-    height: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 190px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 6px;
     padding-bottom: 6px;
     border: solid;
     border-width: thin;
+    color: #FFFFFF;
+    background-color: #222222;
 }
 
 #menu .menuList p{
