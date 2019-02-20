@@ -56,7 +56,7 @@ class Specials extends Component {
     // render each specialItem component
     eachSpecial(item, i) {
         return (
-        <div key={ `container${i}` }>
+        <div className='specialContainer' key={ `container${i}` }>
             <div>
                 <SpecialItem 
                     item={item}

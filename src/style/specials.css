@@ -36,11 +36,33 @@
 }
 
 #specials .specialItem .specialInfo {
+    float: left;
     background-color: #f7f7f7;
     padding-top: 40px;
-    float: left;
     height: 210px;
     width: 250px;
+}
+
+@media screen and (min-width: 1690px) {
+    .specialContainer:nth-last-child(-n+3) img{
+        float: right !important;
+    }
+}
+
+@media screen and (max-width: 1689px) and (min-width: 1100px) {
+    .specialContainer:nth-child(-n+2) img{
+        float: right !important;
+    }
+
+    .specialContainer:nth-last-child(-n+2) img{
+        float: right !important;
+    }
+}
+
+@media screen and (max-width: 1099px){
+    .specialContainer:nth-child(odd) img{
+        float: right !important;
+    }
 }
 
 #specials .specialItem .specialInfo p {
@@ -48,8 +70,7 @@
 }
 
 #specials .specialsList {
-    position: absolute;
     width: 90%;
-    left: 10%;
-    top: 360px;
+    padding-left: 10%;
+    padding-top: 50px;
 }
